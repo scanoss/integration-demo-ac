@@ -1,0 +1,37 @@
+name: SCANOSS Scan + Dependency Track
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "*"
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: write
+  actions: read
+
+jobs:
+  scanoss-code-scan:
+    name: SCANOSS Code Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run SCANOSS Code Scan
+        id: scanoss-code-scan-step
+        uses: scanoss/code-scan-action@v1.6.1
+        with:
+          scanMode: full
+          policies: copyleft, undeclared, dt
+          api.key: ${{ secrets.SCANOSS_API_KEY }}
+          deptrack.upload: true
+          deptrack.url: ${{ secrets.DT_URL }}
+          deptrack.apikey: ${{ secrets.DT_API_KEY }}
+          deptrack.projectname: "my-project-scanoss"
+          deptrack.projectversion: "1.0.0"
