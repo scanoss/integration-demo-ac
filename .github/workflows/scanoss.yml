@@ -27,7 +27,7 @@ jobs:
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@v1.6.1
         with:
-          scanMode: "delta"
+          scanMode: full
           policies: copyleft, undeclared, dt
           api.key: ${{ secrets.SCANOSS_API_KEY }}
           # api.url — only required if you're not using SCANOSS in SaaS mode
