@@ -1,4 +1,4 @@
-name: SCANOSS Scan + Dependency Track
+name: SCANOSS Full Scan
 
 on:
   push:
@@ -27,11 +27,13 @@ jobs:
         id: scanoss-code-scan-step
         uses: scanoss/code-scan-action@v1.6.1
         with:
-          scanMode: full
+          scanMode: "delta"
           policies: copyleft, undeclared, dt
           api.key: ${{ secrets.SCANOSS_API_KEY }}
+          # api.url — only required if you're not using SCANOSS in SaaS mode
+          # api.url: ${{ secrets.SCANOSS_URL }}
           deptrack.upload: true
-          deptrack.url: ${{ secrets.DT_URL }}
+          deptrack.url: "https://dependency-track.scanoss.xyz"
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
-          deptrack.projectname: "my-project-scanoss"
+          deptrack.projectname: "my-project"
           deptrack.projectversion: "1.0.0"
