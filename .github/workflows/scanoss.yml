@@ -35,5 +35,5 @@ jobs:
           deptrack.upload: true
           deptrack.url: "https://dependency-track.scanoss.xyz"
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
-          deptrack.projectname: "my-project"
+          deptrack.projectname: "arcadyan-project"
           deptrack.projectversion: "1.0.0"
