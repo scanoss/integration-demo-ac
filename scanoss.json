@@ -1,0 +1,12 @@
+{
+  "self": {
+    "name": "arcadyan-project",
+    "description": "Example project with advanced snippet tuning"
+  },
+  "settings": {
+    "file_snippet": {
+      "ranking_enabled": true,
+      "skip_headers": true
+    }
+  }
+}
