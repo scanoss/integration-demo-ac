@@ -8,5 +8,12 @@
       "ranking_enabled": true,
       "skip_headers": true
     }
+  },
+  "bom": {
+    "include": [
+      {
+        "purl": "pkg:github/openssl/openssl"
+      }
+    ]
   }
 }
