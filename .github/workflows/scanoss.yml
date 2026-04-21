@@ -33,7 +33,7 @@ jobs:
           # api.url — only required if you're not using SCANOSS in SaaS mode
           # api.url: ${{ secrets.SCANOSS_URL }}
           deptrack.upload: true
-          deptrack.url: "https://dependency-track.scanoss.xyz"
+          deptrack.url: "https://ac-dt.scanoss.xyz"
           deptrack.apikey: ${{ secrets.DT_API_KEY }}
-          deptrack.projectname: "my-project"
+          deptrack.projectname: "arcadyan-project"
           deptrack.projectversion: "1.0.0"

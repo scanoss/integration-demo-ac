@@ -1,0 +1,19 @@
+{
+  "self": {
+    "name": "arcadyan-project",
+    "description": "Example project with advanced snippet tuning"
+  },
+  "settings": {
+    "file_snippet": {
+      "ranking_enabled": true,
+      "skip_headers": true
+    }
+  },
+  "bom": {
+    "include": [
+      {
+        "purl": "pkg:github/openssl/openssl@1.1.1"
+      }
+    ]
+  }
+}
