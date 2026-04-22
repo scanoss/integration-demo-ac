@@ -1,0 +1,3 @@
+.scanoss/
+*.json
+!scanoss.json
