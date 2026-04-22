@@ -1,7 +1,7 @@
 {
   "self": {
     "name": "arcadyan-project",
-    "description": "Example project with snippet tuning"
+    "description": "Example project"
   },
   "settings": {
     "file_snippet": {
