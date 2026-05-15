@@ -25,15 +25,8 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@v1.6.1
+        uses: scanoss/code-scan-action@v1.6.2
         with:
           scanMode: full
-          policies: copyleft, undeclared, dt
+          policies: copyleft, undeclared
           api.key: ${{ secrets.SCANOSS_API_KEY }}
-          # api.url — only required if you're not using SCANOSS in SaaS mode
-          # api.url: ${{ secrets.SCANOSS_URL }}
-          deptrack.upload: true
-          deptrack.url: "https://ac-dt.scanoss.xyz"
-          deptrack.apikey: ${{ secrets.DT_API_KEY }}
-          deptrack.projectname: "arcadyan-project"
-          deptrack.projectversion: "1.0.0"

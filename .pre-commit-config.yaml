@@ -1,0 +1,6 @@
+repos:
+  - repo: https://github.com/scanoss/pre-commit-hooks
+    rev: v0.4.0 # Use the latest version from https://github.com/scanoss/pre-commit-hooks/releases
+    hooks:
+      - id: scanoss-check-undeclared-code
+        args: [--debug]

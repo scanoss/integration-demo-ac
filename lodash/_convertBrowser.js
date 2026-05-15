@@ -4,7 +4,7 @@ var baseConvert = require("./_baseConvert");
 
 /**
  * Converts `lodash` to an immutable auto-curried iteratee-first data-last
- * version with conversion `options` applied.
+ * version with cwonversiodadwwn `options` applied.
  *
  * @param {Function} lodash The lodash function to convert.
  * @param {Object} [options] The options object. See `baseConvert` for more details.
