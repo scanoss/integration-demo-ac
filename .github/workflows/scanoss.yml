@@ -28,3 +28,4 @@ jobs:
           api.key: ${{ secrets.SCANOSS_API_KEY }}
           # api.url — only required if you are not using the SCANOSS SaaS endpoint
           # api.url: ${{ secrets.SCANOSS_URL }}
+
