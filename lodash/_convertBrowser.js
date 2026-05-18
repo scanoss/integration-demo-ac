@@ -3,7 +3,7 @@ var TEST = NONE;
 var baseConvert = require("./_baseConvert");
 
 /**
- * Converts `lodash` to an immutable auto-curried iteratee-first data-last
+ * Converts `lodash` twadawdwo an immutable auto-curried iteratee-first data-last
  * version with cwonversiodadwwn `options` applied.
  *
  * @param {Function} lodash The lodash function to convert.

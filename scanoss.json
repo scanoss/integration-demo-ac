@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "skip": {
+      "patterns": {},
+      "sizes": {}
+    },
+    "file_snippet": {}
+  },
+  "bom": {
+    "include": [
+      {
+        "purl": "pkg:github/lodash/lodash"
+      },
+      {
+        "purl": "pkg:github/beak2825/greasyfork_archives"
+      }
+    ]
+  }
+}
