@@ -1,9 +1,6 @@
 name: SCANOSS Full Scan
 
 on:
-  push:
-    branches:
-      - "main"
   pull_request:
     branches:
       - "*"
@@ -25,8 +22,9 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@v1.6.2
+        uses: scanoss/code-scan-action@v1 # Use the latest version from https://github.com/scanoss/gha-code-scan/releases
         with:
           scanMode: full
-          policies: copyleft, undeclared
           api.key: ${{ secrets.SCANOSS_API_KEY }}
+          # api.url — only required if you are not using the SCANOSS SaaS endpoint
+          # api.url: ${{ secrets.SCANOSS_URL }}
