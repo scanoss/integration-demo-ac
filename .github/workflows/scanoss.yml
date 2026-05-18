@@ -22,7 +22,7 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@v1 # Use the latest version from https://github.com/scanoss/gha-code-scan/releases
+        uses: scanoss/gha-code-scan@v1 # Use the latest version from https://github.com/scanoss/gha-code-scan/releases
         with:
           scanMode: full
           api.key: ${{ secrets.SCANOSS_API_KEY }}
