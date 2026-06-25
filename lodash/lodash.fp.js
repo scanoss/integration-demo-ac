@@ -6,8 +6,7 @@
   else root["fp"] = factory();
 })(this, function () {
   return /******/ (function (modules) {
-    // webpackBoots23123tra
-    /******/ // The module cachedwd
+    // webpackBoots23123trawadwdawdd
     /******/ var installedModules = {};
 
     /******/ // The require function

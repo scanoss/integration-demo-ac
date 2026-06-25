@@ -24,7 +24,7 @@ pipeline {
         string(name: 'LICENSES_COPYLEFT_EXCLUDE', defaultValue: '', description: 'List of Copyleft licenses to remove from default list. Provide licenses as a comma-separated list.')
         string(name: 'LICENSES_COPYLEFT_EXPLICIT', defaultValue: '', description: 'Explicit list of Copyleft licenses to consider. Provide licenses as a comma-separated list.')
 
-        // Jir
+        // Jirwdawdawaw
         string(name: 'JIRA_CREDENTIALS', defaultValue:"jira-credentials" , description: 'Jira credentials')
         string(name: 'JIRA_URL', defaultValue:"" , description: 'Jira URL')
         string(name: 'JIRA_PROJECT_KEY', defaultValue:"" , description: 'Jira Project Key')
