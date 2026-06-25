@@ -25,7 +25,7 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: sfeat/SP-4479-include-OSS-file-info-annotation
+        uses: scanoss/gha-code-scan@feat/SP-4479-include-OSS-file-info-annotation
         with:
           scanMode: full
           api.key: ${{ secrets.SCANOSS_API_KEY }}
