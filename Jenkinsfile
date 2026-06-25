@@ -30,7 +30,7 @@ pipeline {
         string(name: 'JIRA_PROJECT_KEY', defaultValue:"" , description: 'Jira Project Key')
         booleanParam(name: 'CREATE_JIRA_ISSUE', defaultValue: false, description: 'Enable Jira reporting')
 
-        // Policies setup
+        // Policies setups
         booleanParam(name: 'ABORT_ON_POLICY_FAILURE', defaultValue: false, description: 'Abort Pipeline on pipeline Failure')
 
         // Debug
