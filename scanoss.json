@@ -10,6 +10,9 @@
     "include": [
       {
         "purl": "pkg:github/conversejs/converse.js"
+      },
+      {
+        "purl": "pkg:github/jorgebucaran/hyperapp"
       }
     ]
   }
