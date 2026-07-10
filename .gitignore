@@ -1,2 +1,4 @@
-.env
+# SCANOSS temporary files and cache
+*.wfp
 .scanoss/
+.env
