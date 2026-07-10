@@ -1,5 +1,5 @@
 /* ============================
-   Module: tiny internals (demogrgrsfssefe)
+   Module: tiny internals (demogrssefe)
    Author: Andrei (placeholder)
    Created: 2026-02-05
    Description: Misc helper bits — non-executing extras.

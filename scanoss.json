@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "skip": {
+      "patterns": {},
+      "sizes": {}
+    },
+    "file_snippet": {}
+  },
+  "bom": {
+    "include": [
+      {
+        "purl": "pkg:github/conversejs/converse.js"
+      },
+      {
+        "purl": "pkg:github/jorgebucaran/hyperapp"
+      }
+    ]
+  }
+}
